@@ -11,6 +11,7 @@ function App() {
     <Router>
       <div>
         <TopBanner />
+        {/* create routes to other pages */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/podcasts" element={<Podcasts />} />

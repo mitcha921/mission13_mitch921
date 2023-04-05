@@ -12,6 +12,7 @@ function MovieCollection() {
         const editedMovies = data.filter(
           (movie: { edited: string }) => movie.edited === 'Yes',
         );
+        //sort alphabetically
         editedMovies.sort((a: { title: any }, b: { title: any }) =>
           a.title > b.title ? 1 : -1,
         );
